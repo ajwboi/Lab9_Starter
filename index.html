@@ -117,6 +117,27 @@
       }
     }
 
+    try {
+      alert( 'try' );
+      var x = 5;
+      if (x > 10) {
+        alert( 'Correct computation' );
+      }
+      else {
+        throw new InputError("Input is <= 10");
+      }
+    } 
+    catch(err) {
+      alert( 'catch' );
+      alert(err.message);
+      alert(err.name);
+      alert(err.stack); 
+    }
+    finally {
+      alert('finally');
+    }
+
+
     // Start your code here
     // You may move this JS to another file if you wish
     errorBtns[0].addEventListener('click', function()  {
