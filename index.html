@@ -117,24 +117,23 @@
       }
     }
 
+    TrackJS.track('Testing TrackJS!');
+
     try {
-      alert( 'try' );
       var x = 5;
       if (x > 10) {
-        alert( 'Correct computation' );
+        // do nothing
       }
       else {
         throw new InputError("Input is <= 10");
       }
     } 
     catch(err) {
-      alert( 'catch' );
       alert(err.message);
       alert(err.name);
       alert(err.stack); 
     }
     finally {
-      alert('finally');
     }
 
 
